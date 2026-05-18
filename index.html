@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Trả lời thành thật đi nha! 🥰</title>
+    <title>Trả lời thành thật đi nha!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Nhúng các font chữ cute: Mochi Iyagi (font viết tay tròn) và Quicksand (font bo góc đáng yêu) -->
     <link href="https://fonts.googleapis.com/css2?family=Mochi+Iyagi&family=Quicksand:wght@600;700;900&display=swap" rel="stylesheet">
 
     <style>
@@ -19,7 +18,6 @@
             justify-content: center;
             align-items: center;
             background: linear-gradient(135deg, #ffe6e6, #ffb3b3);
-            /* Font chữ mặc định bo tròn dễ thương */
             font-family: 'Quicksand', sans-serif; 
             overflow: hidden; 
             position: relative;
@@ -31,7 +29,7 @@
             text-align: center;
             background: white;
             padding: 40px;
-            border-radius: 30px; /* Bo góc tròn trịa hơn */
+            border-radius: 30px;
             box-shadow: 0 15px 35px rgba(214, 48, 49, 0.15);
             max-width: 80%;
             z-index: 2;
@@ -40,7 +38,6 @@
         h1 {
             color: #d63031;
             font-size: 2.5rem;
-            /* Đổi riêng tiêu đề sang font viết tay siêu cute */
             font-family: 'Mochi Iyagi', sans-serif;
             margin-bottom: 30px;
             line-height: 1.4;
@@ -81,7 +78,6 @@
             z-index: 1000;
         }
 
-        /* Chữ CÓ bay lung tung cũng đổi sang font chữ viết tay tinh nghịch */
         .flooded-yes {
             position: absolute;
             color: #2ecc71;
@@ -105,8 +101,8 @@
     <div class="container" id="mainContainer">
         <h1 id="question">Cậu có thích tớ không? 👉👈❤️</h1>
         <div class="btn-group">
-            <button id="btnYes" onclick="sayYes()">CÓ chứ! ❤️</button>
-            <button id="btnNo" onclick="growYes()">KHÔNG 💔</button>
+            <button id="btnYes" onclick="sayYes()">CÓ Chứ❤️</button>
+            <button id="btnNo" onclick="growYes()">KHÔNG!💔</button>
         </div>
     </div>
 
@@ -117,9 +113,9 @@
         const trollTexts = [
             "Ơ kìa, bấm nhầm nút à?",
             "Suy nghĩ lại đi nha...",
-            "Không cho bấm nút này đâu!",
-            "Nút CÓ bên cạnh kìa cậu ơi",
-            "Đừng từ chối màaaa 🥺",
+            "Không cho bấm nút này đâu!😝",
+            "Nút Có bên cạnh kìa cậu ơi",
+            "Đừng từ chối màaaaa🥺",
             "Hết lối thoát rồi nhé!😝",
             "Năn nỉ đóooo 😭",
             "Chấp nhận số phận đi hihi"
@@ -152,8 +148,8 @@
                 btnYes.style.display = 'flex';
                 btnYes.style.justifyContent = 'center';
                 btnYes.style.alignItems = 'center';
-                btnYes.style.fontSize = '4.5rem'; /* Giảm nhẹ font-size gốc để font cute hiển thị vừa vặn */
-                btnYes.style.fontFamily = "'Mochi Iyagi', sans-serif"; /* Khi full màn hình biến thành font viết tay luôn */
+                btnYes.style.fontSize = '4.5rem';
+                btnYes.style.fontFamily = "'Mochi Iyagi', sans-serif";
             }
 
             btnNo.innerText = trollTexts[textIndex];
@@ -161,7 +157,7 @@
         }
 
         function floodScreenWithYes() {
-            document.getElementById('question').innerText = "PHẢI THÍCH TỚ THÔI! 😤❤️";
+            document.getElementById('question').innerText = "PHẢI THÍCH TỚ THÔI😤❤️";
             document.getElementById('btnNo').style.display = 'none';
 
             const btnYes = document.getElementById('btnYes');
@@ -171,11 +167,11 @@
                 setTimeout(() => {
                     const yesText = document.createElement('div');
                     yesText.classList.add('flooded-yes');
-                    yesText.innerText = "CÓ chứ! ❤️";
+                    yesText.innerText = "Có chứ! ❤️";
 
                     const randomX = Math.random() * 100;
                     const randomY = Math.random() * 100;
-                    const randomSize = Math.random() * 2.5 + 1.5; /* Điều chỉnh lại size chữ cute cho đẹp */
+                    const randomSize = Math.random() * 2.5 + 1.5;
                     const randomRotate = Math.random() * 70 - 35;
 
                     yesText.style.left = `${randomX}%`;
@@ -195,8 +191,8 @@
         function sayYes() {
             document.body.innerHTML = `
                 <div class="container" style="animation: pop 0.5s ease; font-family: 'Quicksand', sans-serif; z-index: 9999; position: relative; border-radius: 30px;">
-                    <h1 style="font-size: 3rem; font-family: 'Mochi Iyagi', sans-serif; line-height: 1.4;">Hí hí biết ngay mà! 🥰❤️</h1>
-                    <p style="font-size: 1.5rem; color: #555; font-weight: 700;">Chốt đơn rồi nha, không hủy cọc đâu đấy! 😘</p>
+                    <h1 style="font-size: 3rem; font-family: 'Mochi Iyagi', sans-serif; line-height: 1.4;">Hí hí biết ngay mà🥰❤️</h1>
+                    <p style="font-size: 1.5rem; color: #555; font-weight: 700;">Chốt rồi nha, ko đc giả vờ đâu nhé😘</p>
                 </div>
             `;
             document.body.style.background = "linear-gradient(135deg, #ff9a9e, #fecfef)";
