@@ -6,7 +6,8 @@
     <title>Trả lời thành thật đi nha!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mochi+Iyagi&family=Quicksand:wght@600;700;900&display=swap" rel="stylesheet">
+    <!-- Đổi sang nhúng phông chữ Patrick Hand -->
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -18,7 +19,7 @@
             justify-content: center;
             align-items: center;
             background: linear-gradient(135deg, #ffe6e6, #ffb3b3);
-            font-family: 'Quicksand', sans-serif; 
+            font-family: 'Patrick Hand', cursive, sans-serif; 
             overflow: hidden; 
             position: relative;
             -webkit-user-select: none;
@@ -37,8 +38,8 @@
 
         h1 {
             color: #d63031;
-            font-size: 2.5rem;
-            font-family: 'Mochi Iyagi', sans-serif;
+            font-size: 2.8rem; /* Tăng nhẹ cỡ chữ vì font Patrick Hand hơi mảnh hơn */
+            font-family: 'Patrick Hand', cursive, sans-serif;
             margin-bottom: 30px;
             line-height: 1.4;
         }
@@ -53,13 +54,13 @@
 
         button {
             padding: 14px 38px;
-            font-size: 1.25rem;
+            font-size: 1.4rem;
             font-weight: 900;
             border: none;
             border-radius: 50px; 
             cursor: pointer;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            font-family: 'Quicksand', sans-serif; 
+            font-family: 'Patrick Hand', cursive, sans-serif; 
             touch-action: manipulation; 
         }
 
@@ -81,7 +82,7 @@
         .flooded-yes {
             position: absolute;
             color: #2ecc71;
-            font-family: 'Mochi Iyagi', sans-serif;
+            font-family: 'Patrick Hand', cursive, sans-serif;
             white-space: nowrap;
             user-select: none;
             pointer-events: none;
@@ -149,7 +150,7 @@
                 btnYes.style.justifyContent = 'center';
                 btnYes.style.alignItems = 'center';
                 btnYes.style.fontSize = '4.5rem';
-                btnYes.style.fontFamily = "'Mochi Iyagi', sans-serif";
+                btnYes.style.fontFamily = "'Patrick Hand', cursive, sans-serif";
             }
 
             btnNo.innerText = trollTexts[textIndex];
@@ -190,9 +191,9 @@
 
         function sayYes() {
             document.body.innerHTML = `
-                <div class="container" style="animation: pop 0.5s ease; font-family: 'Quicksand', sans-serif; z-index: 9999; position: relative; border-radius: 30px;">
-                    <h1 style="font-size: 3rem; font-family: 'Mochi Iyagi', sans-serif; line-height: 1.4;">Hí hí biết ngay mà🥰❤️</h1>
-                    <p style="font-size: 1.5rem; color: #555; font-weight: 700;">Chốt rồi nha, ko đc giả vờ đâu nhé😘</p>
+                <div class="container" style="animation: pop 0.5s ease; font-family: 'Patrick Hand', cursive, sans-serif; z-index: 9999; position: relative; border-radius: 30px;">
+                    <h1 style="font-size: 3.5rem; font-family: 'Patrick Hand', cursive, sans-serif; line-height: 1.4;">Hí hí biết ngay mà🥰❤️</h1>
+                    <p style="font-size: 1.8rem; color: #555; font-weight: 700;">Chốt rồi nha, ko đc giả vờ đâu nhé😘</p>
                 </div>
             `;
             document.body.style.background = "linear-gradient(135deg, #ff9a9e, #fecfef)";
